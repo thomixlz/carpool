@@ -36,6 +36,18 @@ Création d'une application web de covoiturage pour l'établissement Metz Numeri
 - Add+ - Condition : Nom d'utilisateur uniquement des lettres et des chiffres à l'inscription.
 - Add+ - Protection Injection SQL formulaire d'inscription et de connexion.
 
+## v0.5
+
+- Add+ - Fichier .htaccess
+- Add+ - Réécriture d'URL grâce à la commande SSH mod_rewrite
+        * Suppression de l'extension .php dans l'URL
+        * Supression de l'arborescence dans l'URL
+        
+!!! Contrainte de l'hebergement : Commande SSH non disponible, donc infonctionnel !!!
+
+## v0.6
+
+...soon
 
 
 
