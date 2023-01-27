@@ -31,6 +31,13 @@ Création d'une application web de covoiturage pour l'établissement Metz Numeri
             * Redirection vers l'app carpool à index.php
 - Add+ - Bouton de Déconnexion sur l'app.
 
+## v0.4
+
+- Add+ - Condition : Nom d'utilisateur uniquement des lettres et des chiffres à l'inscription.
+- Add+ - Protection Injection SQL formulaire d'inscription et de connexion.
+
+
+
 
 
 
