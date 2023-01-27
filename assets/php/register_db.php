@@ -26,6 +26,10 @@
             array_push($errors, "Les deux mots de passe ne correspondent pas !");
             $_SESSION['error'] = "Les deux mots de passe ne correspondent pas !";
         }
+        if(!preg_match("/^[a-zA-Z0-9]+$/", $_POST['username'])) {
+            array_push($errors, "Le nom d'utilisateur ne doit contenir que des lettres et des chiffres !");
+            $_SESSION['error'] = "Le nom d'utilisateur ne doit contenir que des lettres et des chiffres !";
+        }
 
         $user_check_query = "SELECT * FROM user WHERE username = '$username' OR email = '$email' LIMIT 1";
         $query = mysqli_query($conn, $user_check_query);
@@ -43,17 +47,28 @@
         }
 
         if (count($errors) == 0) {
-            $password = md5($password_1);
 
-            $sql = "INSERT INTO user (username, email, password) VALUES ('$username', '$email', '$password')";
-            mysqli_query($conn, $sql);
+            if (preg_match('/[^a-zA-Z0-9_]/', $username) || preg_match('/[^a-zA-Z0-9_]/', $email)) {
+                array_push($errors, "Les requêtes SQL ne sont pas autorisées :p");
+                $_SESSION['error'] = "Les requêtes SQL ne sont pas autorisées :p";
+                header("location:  register.php");
+            
+            } else {
 
-            $_SESSION['username'] = $username;
-            $_SESSION['success'] = "Tu es maintenant connecté !";
-            header('location: ./index.php');
+                $password = md5($password_1);
+
+                $sql = "INSERT INTO user (username, email, password) VALUES ('$username', '$email', '$password')";
+                mysqli_query($conn, $sql);
+
+                $_SESSION['username'] = $username;
+                $_SESSION['success'] = "Tu es maintenant connecté !";
+                header("location: https://carpool.breglerthomas.fr/");
+            }
+
         } else {
             header("location: register.php");
         }
+
     }
 
 ?>

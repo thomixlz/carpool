@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'inscription</title>
 
-    <link rel="stylesheet" href="./assets/css/style-register.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
     

@@ -11,12 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de connexion</title>
 
-    <link rel="stylesheet" href="./assets/css/style-register.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
     
     <div class="header">
-        <h2>Login</h2>
+        <h2>Connexion</h2>
     </div>
 
     <form action="login_db.php" method="post">
