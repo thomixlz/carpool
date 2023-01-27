@@ -24,7 +24,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="./assets/css/style.css">
 		
-		<title>Carpool v0.2</title>
+		<title>Carpool v0.5</title>
 
 	</head>
 
@@ -34,7 +34,8 @@
 		</div>
 	
 		<div class="homecontent">
-			<!--  notification message -->
+			
+			<!--  Notification utilisateur connecté -->
 			<?php if (isset($_SESSION['success'])) : ?>
 				<div class="success">
 					<h3>
@@ -46,7 +47,7 @@
 				</div>
 			<?php endif ?>
 		
-			<!-- logged in user information -->
+			<!-- Informations utilisateur connecté -->
 			<?php if (isset($_SESSION['username'])) : ?>
 				<p>Bienvenue <strong><?php echo $_SESSION['username']; ?></strong></p>
 				<p><a href="index.php?logout='1'">Déconnexion</a></p>
