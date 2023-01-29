@@ -62,7 +62,7 @@
 
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "Tu es maintenant connecté !";
-                header("location: https://carpool.breglerthomas.fr/");
+                header("location: https://carpool.breglerthomas.fr/map.php");
             }
 
         } else {

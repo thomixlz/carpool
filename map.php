@@ -50,7 +50,7 @@
 			<!-- Informations utilisateur connecté -->
 			<?php if (isset($_SESSION['username'])) : ?>
 				<p>Bienvenue <strong><?php echo $_SESSION['username']; ?></strong></p>
-				<p><a href="index.php?logout='1'">Déconnexion</a></p>
+				<p><a href="index.html?logout='1'">Déconnexion</a></p>
 			<?php endif ?>
 		</div>
 

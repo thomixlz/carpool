@@ -47,8 +47,10 @@ Création d'une application web de covoiturage pour l'établissement Metz Numeri
 
 ## v0.6
 
-...soon
+Add+ - Page d'acceuil type One Page.
+       * Reproduction basique maquette Figma. (en cours)
 
+Fix~ - Correctif de la page index.php en map.php + Redirection général.
 
 
 

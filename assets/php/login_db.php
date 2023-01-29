@@ -32,7 +32,7 @@
                 if (mysqli_num_rows($result) == 1) {
                     $_SESSION['username'] = $username;
                     $_SESSION['success'] = "Tu es maintenant connecté";
-                    header("location: https://carpool.breglerthomas.fr/");
+                    header("location: https://carpool.breglerthomas.fr/map.php");
                 } else {
                     array_push($errors, "Mauvais nom d'utilisateur ou mot de passe");
                     $_SESSION['error'] = "Mauvais nom d'utilisateur ou mot de passe!";
