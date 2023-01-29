@@ -48,7 +48,7 @@
 
         if (count($errors) == 0) {
 
-            if (preg_match('/[^a-zA-Z0-9_]/', $username) || preg_match('/[^a-zA-Z0-9_]/', $email)) {
+            if (preg_match('/[^a-zA-Z0-9_]/', $username) || preg_match('/[^a-zA-Z0-9_@.]/', $email)) {
                 array_push($errors, "Les requêtes SQL ne sont pas autorisées :p");
                 $_SESSION['error'] = "Les requêtes SQL ne sont pas autorisées :p";
                 header("location:  register.php");

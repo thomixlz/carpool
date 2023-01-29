@@ -52,7 +52,9 @@ Add+ - Page d'acceuil type One Page.
 
 Fix~ - Correctif de la page index.php en map.php + Redirection général.
 
+## v0.7
 
+Fix~ - Champ email dans l'inscription consièdre les caractères spéciaux comme une injection SQL. (Allow @ and .)
 
 
 
