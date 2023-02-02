@@ -43,18 +43,18 @@ Création d'une application web de covoiturage pour l'établissement Metz Numeri
         * Suppression de l'extension .php dans l'URL
         * Supression de l'arborescence dans l'URL
         
-!!! Contrainte de l'hebergement : Commande SSH non disponible, donc infonctionnel !!!
+!!! Contrainte de l'hebergement : Commande SSH non disponible, donc infonctionnel - hébergeur mutualisée !!!
 
 ## v0.6
 
-Add+ - Page d'acceuil type One Page.
+- Add+ - Page d'acceuil type One Page.
        * Reproduction basique maquette Figma. (en cours)
-
-Fix~ - Correctif de la page index.php en map.php + Redirection général.
+- Fix~ - Correctif de la page index.php en map.php + Redirection général.
 
 ## v0.7
 
-Fix~ - Champ email dans l'inscription consièdre les caractères spéciaux comme une injection SQL. (Allow @ and .)
+- Fix~ - Champ email dans l'inscription erreur: les caractères spéciaux considéré comme une injection SQL. (Allow @ and .)
+- Add+ - Main page avancée
 
 
 
